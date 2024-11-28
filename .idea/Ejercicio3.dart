@@ -1,9 +1,9 @@
 import 'dart:io';
 
 void main(){
-  Map<String, Map<String, List<double>>> estudiantes = {  };
+  Map<String, Map<String, List<double>>> estudiantes = {  };  // MAPA QUE CUENTA CON LA SIGUIENTE ESTRUCTURA: ['ESTUDIANTE' -> [ 'NOTAS' -> {X,X,X,X,}]]
 
-
+  // COMPRUEBO LA OPCION QUE INGRESA EL USUARIO Y LANZO LA FUNCION CORRESPONDIENTE
   bool ciclo = true;
   while (ciclo) {
     print('A - AÑADIR');
@@ -34,8 +34,12 @@ void main(){
 }
 
 
-
+/**
+ * Funcion que pide al usuario todos los datos necesarios y comprueba los valores cada vez que se ingresa uno.
+ * Si todos los valores son correctos, se añade al diccionario
+ */
 void Add(Map<String, Map<String, List<double>>> lista){
+
   bool ciclo = true;
   while (ciclo) {
     print('Ingresa el nombre del estudiante: ');
